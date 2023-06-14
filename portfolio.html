@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio du futur</title>
+</head>
+<body>
+    <!-- ==========debut========== -->
+    <div class="main-container">
+        <!-- ==========menu de la page========= -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>A</span>rso</a>
+            </div>
+            <ul class="menu-item">
+                <li><a href="portfolio.html#home" class="active"><i class='bx bx-home'></i></i>Acceuil</a></li>
+                <li><a href="#about"><i class='bx bxs-user'></i>A propos</a></li>
+                <li><a href="#service"><i class='bx bxs-award'></i>Services</a></li>
+                <li><a href="#project"><i class='bx bx-folder-open'></i>Projets</a></li>
+                <li><a href="#vision"><i class='bx bxs-binoculars'></i>Vision</a></li>
+                <li><a href="#contact"><i class='bx bxs-message-rounded'></i></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- ===========les pages de item du menu=========== -->
+        <div class="main-content">
+            <!-- ======la section de la page d'acceuil========== -->
+            <section class="home" id="home">
+                <div class="meteo">
+                    <div class="modal">
+                        <span class="closebtn">&times;</span>
+                        <div class="modal-content">
+                            <input class="ville" type="text" placeholder="Ville">
+                            <i class="fa-solid fa-magnifying-glass seach"></i>
+                            <p class="celcius"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="line">
+                        <div class="home-info padding-1">
+                            <h3 class="hello">Salut! Je m'appelle <span>Arsène Gnanhoungbe</span></h3>
+                            <h3 class="profil">Je suis <span class="profil-type">Developpeur Fullstack</span></h3>
+                            <p>Transformez votre vision en réalité numérique avec mon expertise en développement web.</p>
+                            <a href="#" class="btn padding-1"><span>Me joindre</span><i></i></a>
+                            <a href="#" class="btn opnbtn padding-1"><span>Météo</span><i></i></a>
+                        </div>
+                        <div class="home-img padding-1">
+                            <div class="box-img">
+                                <img src="img/886d0ac3-9f0f-427c-a476-b2b60240fb4e.jpeg" alt="une photo professionnelle de moi">
+                                <span class="home-img-circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========la section a propos========== -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="line">
+                        <div class="about-title padding-1">
+                            <h2>A propos de moi</h2>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="about-presentation padding-1">
+                            <h3>Je me nomme Arsène Gnanhoungbe et je suis <span>Developpeur Web</span></h3>
+                            <p>Expérience, expertise et innovation : votre projet entre de bonnes mains avec un développeur web senior de 10 ans</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                            <div class="personnal-info padding-1">
+                                <div class="line personnal-item">
+                                    <div class="info-item padding-1">
+                                        <p>Anniverssaire : <span>11/11/1996</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Age : <span>37 ans</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Situation matrimoniale : <span>Marié</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Ville : <span>Cotonou</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Email : <span>arsogn991@gmail.com</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Téléphone : <span>+229 96241841</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Titre : <span>IT en SIM</span></p>
+                                    </div>
+                                    <div class="info-item padding-1">
+                                        <p>Freelancing: <span>Disponible</span></p>
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="about-buttons padding-1">
+                                        <a href="#" class="btn load-cv"><span>Telecharger CV</span><i></i></a>
+                                        <a href="#" class="btn"><span>Me contacter</span><i></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills padding-1">
+                                <div class="line">
+                                    <div class="skills-graph padding-1">
+                                            <canvas id="skills" class="skills"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="line path-screen">
+                        <div class="path padding-1">
+                            <h3 class="title">Parcours</h3>
+                            <div class="line">
+                                <div class="path-list padding-1">
+                                    <div class="path-box shadows padding-1">
+                                        <div class="path-list-item">
+                                            <div class="path-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2030-2031</h3>
+                                                <h4>Master en Informatique médical</h4>
+                                                <p>Intégration des technologies de l'IA et de l'apprentissage automatique pour l'amélioration des diagnostics et des traitements dans le domaine médical</p>
+                                            </div>
+                                            <div class="path-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2027-2028</h3>
+                                                <h4>Certifié Gestionnaire de projet</h4>
+                                                <p>Amélioration de la gestion de projet grâce à l'adoption de méthodologies agiles et de pratiques de gestion du changement</p>
+                                            </div>
+                                            <div class="path-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2026-2027</h3>
+                                                <h4>Certifié Expert en Cybersécurité</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                    Eligendi, vel accusantium. Eligendi?</p>
+                                            </div>
+                                            <div class="path-item last-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2023-2024</h3>
+                                                <h4>Certifié Dev Web et mobile</h4>
+                                                <p>Renforcement de la cyber sécurité : Stratégies, technologies et meilleures pratiques pour protéger les systèmes d'information</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="path padding-1">
+                            <h3 class="title">Compétences</h3>
+                            <div class="line">
+                                <div class="path-list padding-1">
+                                    <div class="path-box shadows padding-1">
+                                        <div class="path-list-item">
+                                            <div class="path-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2030-2031</h3>
+                                                <h4>Développement de logiciels médicaux</h4>
+                                                <p>Developpement et mise en œuvre des logiciels et des applications spécifiquement conçus pour les besoins du secteur médical.</p>
+                                            </div>
+                                            <div class="path-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2027-2028</h3>
+                                                <h4>Gestionnaire de projet</h4>
+                                                <p>Planification et gestion du projet : élaboration des plans de projet complets</p>
+                                            </div>
+                                            <div class="path-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2026-2027</h3>
+                                                <h4>Frameworks</h4>
+                                                <p>Expertise des frameworks et des bibliothèques : frameworks et bibliothèques utilisés dans le développement web, tels que React, Angular, Vue.js.</p>
+                                            </div>
+                                            <div class="path-item last-item padding-1">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="year"><i class="fa fa-calendar"></i>2023-2024</h3>
+                                                <h4>Langages</h4>
+                                                <p>Maîtrise des langages de programmation tels que HTML, CSS, JavaScript, ainsi que les langage de programmation côté serveur comme PHP, Python.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- la section service -->
+            <section class="service" id="service">
+                <div class="container">
+                    <div class="line">
+                        <div class="about-title padding-1">
+                            <h2>Mes services</h2>
+                        </div>
+                    </div>
+                    <div class="line service-item">
+                        <div class="service-container padding-1">
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h3>Developpement de Site Web</h3>
+                                <p>Conception, développement et maintenance des sites web et des applications web</p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-mobile"></i>
+                                </div>
+                                <h3>Developpement d'Application Mobile</h3>
+                                <p>Conception, développement et maintenance des sites web et des applications web</p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-palette"></i>
+                                </div>
+                                <h3>Identité Visuelle</h3>
+                                <p>Gestion de l'image de marque d'une entreprise ou d'une organisation.</p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fa-sharp fa-solid fa-list-check"></i>
+                                </div>
+                                <h3>Gestion de Projet</h3>
+                                <p>Planification, organisation, exécution et suivi de projets.</p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <h3>Sécurité Informatique</h3>
+                                <p>Protection des systèmes d'information et des données contre les menaces et les attaques informatiques</p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-people-robbery"></i>
+                                </div>
+                                <h3>Consultation</h3>
+                                <p>Conseils et expertises spécialisées dans le domaine de l'informatique appliquée à la santé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- la section des projets -->
+
+            <section class="project" id="project">
+                <div class="container">
+                    <div class="line">
+                        <div class="about-title padding-1">
+                            <h2>Projets</h2>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="projects-title padding-1">
+                            <p>Voici mes tout dernier projets :</p>
+                        </div>
+                    </div>
+                    <div class="line project-content">
+                        <div class="project-item padding-1">
+                            
+                            <img src="img/4086813.jpg" alt="Project">
+                            
+                            <img src="img/4307057.jpg" alt="Project">
+                            
+                            <img src="img/6242609.jpg" alt="Project">
+                    
+                            <img src="img/blog-responsive-design-1200x600.jpg" alt="Project">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- la partie où je parle de ma vision pour le futur -->
+
+            <section class="vision" id="vision">
+                <div class="container">
+                    <div class="line">
+                        <div class="about-title padding-1">
+                            <h2>Vision</h2>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="vision-content">
+                            <div class="vision-img">
+                                <img src="img/417045.png" alt="vision">
+                            </div>
+                        </div>
+                        <div class="vision-text">
+                            <p>Dans 10 ans, le developpement web connaitra une avancée technologique plus considérable. La sécurité en ligne sera plus avancée, les systèmes de protection des données seront plus sophystiqués. Je me vois à mes 25 ans de carrière en développement web, je serai le propriétaire d'une grande entreprise qui aporte des solutions numériques et de sécurité aux particuliers.</p>
+                            <img src="img/3328278.png" alt="Mon entreprise">
+                        </div>
+                        <div class="vision-text picture">
+                            <img src="img/1651654.png" alt="Consultant">
+                            <p>Mon sevice de consulting sera plus développé et je serai sollicité de part et d'autre dans le monde.</p>
+                        </div>
+                        <div class="vision-text">
+                            <p>Enfin je voudrais continuer à renforcer mes compétences en matière de gestion de projet pour être cpable de coordonner des projets complèxes en tant que chef de projet tout en restant en phase avec les éolutions technologiques.</p>
+                            <img src="img/1087815.png" alt="Consultant">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- la partie contact -->
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="line">
+                        <div class="about-title padding-1">
+                            <h2>Contactez moi</h2>
+                        </div>
+                    </div>
+                   <h3 class="contact-title">AVEZ VOUS UNE QUESTION ?</h3>
+                   <h4 class="contact-title-under">Je suis à votre service</h4>
+                   <div class="line contact-content">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <h4>Appelez moi au:</h4>
+                        <p>+229 96241841</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h4>Localisation</h4>
+                        <p>Cotonou</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h4>E-mail</h4>
+                        <p>arsogn991@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                        <h4>Adresse web</h4>
+                        <p>www.domain.com</p>
+                    </div>
+                   </div>
+                   <h3 class="contact-title">ENVOYEZ MOI UN MESSAGE</h3>
+                   <h4 class="contact-title-under">Je répond dans les plus bref délai</h4>
+                </div>
+                <div class="line">
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="form-present">
+                                <input type="text" name="" placeholder="Nom">
+                                <input type="text" name="" placeholder="Email">
+                            </div>
+                            <div class="form-head">
+                                <input type="text" class="subject" placeholder="Objet">
+                            </div>
+                            <div class="form-head">
+                                <textarea name="" class="message" id="" placeholder="Message" ></textarea>
+                            </div>
+                            <div class="form-head">
+                                <button type="submit" class="send">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- ========fin======= -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+    <script>
+        /* intégration de l'api de la météo */
+
+        document.querySelector('.seach').addEventListener('click', ()=>{
+            event.preventDefault();
+            let city = document.querySelector('.ville').value;
+            if(city){
+                let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=7ea625be9d7c614a1601193f333f1094&units=metric`
+                fetch(url)
+                .then(response => response.json())
+                .then((result)=>{
+                /* console.log(result.city.name) */
+                let table = result.list;
+                let temp = table[1].main.temp;
+                let schema = `<p class="celcius">${result.city.name}, ${temp} °C</p>`;
+                document.querySelector('.celcius').innerHTML = schema;
+                })
+
+               
+            }
+        })
+
+        document.querySelector('.seach').addEventListener('click', () =>{
+            city = '';
+        })
+
+        let modal = document.querySelector(".modal")
+        let closeBtn = document.querySelector('.closebtn')
+        let opnBtn = document.querySelector('.opnbtn')
+
+        opnBtn.addEventListener('click', ()=>{
+            modal.style.display = 'block'
+        })
+
+        closeBtn.addEventListener('click', ()=>{
+            modal.style.display = 'none'
+        })
+
+        
+
+        /* ===========profil animation============ */
+        let typed = new Typed('.profil-type', {
+            strings:['Developpeur Fullstack','Expert en Cybersécurité','IT Informatique médical','Chef de projet', 'Consultant'],
+            typeSpeed:90,
+            backSpeed:90,
+            loop:true
+        });
+
+        const chartData = {
+            labels : ['CSS', 'HTML', 'JavaScript', 'PHP'],
+            data : [30, 30, 25, 15]
+        }
+
+        let skills = document.querySelector('#skills');
+        new Chart("skills", {
+            type : 'doughnut',
+            data : {
+                labels : chartData.labels,
+                datasets : [
+                    {
+                        label : 'Languages en %',
+                        data : chartData.data,
+                    }
+                ]
+            },
+            options: {
+                borderWidth : 5,
+                borderRadius : 2,
+                hoverBorderWidth : 0,
+            }
+        });
+    </script>
+</body>
+</html>
